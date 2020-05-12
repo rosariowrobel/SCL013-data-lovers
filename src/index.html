@@ -2,11 +2,147 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Lovers-PokeGuía</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="imagenes/LogoHead_GIF.gif">
   </head>
+
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+<!-- Primera Página-->
+    <div id="portada" >
+     <button id="botonInicio">
+        <img id="botonComenzar" src= "imagenes/PokeBola.png" />
+      </button>
+    </div> <!-- Cierra Div Primera Pagina-->
+
+
+<!-- Segunda Página-->
+    <div id="paginaConceptos" >
+      <header class= "Rectangulosuperior">
+        <img class= "logospequeños" src= "imagenes/logo_chico.png"/>
+      </header>
+
+      <nav class="barradetitulo">
+        <!-- PONER AQUI UN MENU HAMBURGUESA-->
+        <img class= "manito" src= "imagenes/manito.png"/>
+        <h1 class= "tituloSuperior">Conceptos Básicos</h1>
+      </nav>
+
+      <div id="cuadroBotonesMasTexto">
+        <div id="cajaBotonesCostado">
+          <button type="button" id="boton1" class ="botonesCostado" onclick= mostrarTexto1();>¿Qué es Pokemon Go?</button>
+          <button type="button" id="boton2" class ="botonesCostado" onclick= mostrarTexto2();>¿Cómo se juega?</button>
+          <button type="button" id="boton3" class ="botonesCostado" onclick= mostrarTexto3();>¿Qué características tienen los Pokemones?</button>
+          <button type="button" id="boton4" class ="botonesCostado" onclick= mostrarTexto4();>¿Qué es la POKEDEX?</button>
+        </div>
+
+        <div> <!-- Caja que contine la información  -->
+          <article id="cajaTexto1" class="cajaTexto">Pokemon GO es una aventura free-to-play que se vale de la realidad aumentada para localizar y atrapar Pokémon en el mundo real y enfrentarlos a los de otros jugadores.
+            Con Pokémon GO descubrirás Pokémon en un mundo completamente nuevo, ¡tu propio mundo! Pokémon GO te da la oportunidad de explorar lugares reales y de buscar Pokémon por todos lados. Más y más Pokémon siguen apareciendo por todo el mundo, incluyendo Pokémon legendarios únicos y poderosos.
+            A medida que te muevas por el lugar donde vives y los sitios que visites, tu smartphone podrá vibrar para hacerte saber que estás cerca de un Pokémon. Una vez que te encuentres con un Pokémon, apunta mirando la pantalla táctil de tu smartphone y lanza una Poké Ball para atraparlo, ¡pero ten cuidado, porque podría salir huyendo! También puedes buscar Poképaradas situadas en lugares interesantes, como instalaciones de arte, puntos históricos y monumentos públicos, donde puedes recoger más Poké Balls y otros objetos.
+            Pokémon GO, es un juego desarrollado por Nantic y The Pokémon Company y distribuido por Nintendo para dispositivos iOS y Android. Lanzado el 2016, funcionando hasta la actualidad.
+            ¡VE EL TRAILER DE POKEMON GO
+            <a href="https://youtu.be/vZuh-FX_Jqo" target="_blank">AQUÍ!</a>
+          </article> 
+
+          <article id="cajaTexto2" class="cajaTexto">Una vez que instalas el juego y creas tu avatar, ya estás listo para empezar a cazar. No obstante, dado que en el juego tienes que moverte por las calles, antes de salir a atrapar criaturas te recomendamos que configures las opciones, como activar o desactivar la música y los efectos de sonido.
+            Para ello, pulsa en la PokéBall de la pantalla del mapa y después selecciona Opciones en la esquina superior derecha. Además de la música o la vibración, también dispones de un modo de ahorro de batería para gastar menos energía durante el juego.
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/brRp0br/01png.png"></a>
+            El modo ahorro hará que al bajar el móvil la pantalla se apague. De esta forma el consumo de batería será mucho menor. Esta característica permite mejorar el consumo de forma notable, algo que tu móvil agradecerá.
+            Eso sí, recuerda que la app debe estar abierta en primer plano. Si pulsas el botón Home y la dejas en segundo plano, o si bloqueas el móvil, no podrás capturar ningún Pokémon. 
+            Lo mejor es que en ajustes de tu teléfono, configures la pantalla para que permanezca activa el mayor tiempo posible.
+            Captura un Pokémon. Para atraparlo tienes que moverte por las calles y dar con ellos. Verás tu avatar en el mapa, que se desplazará en la misma dirección en la que camines. 
+            Ten en cuenta que el juego toma los datos de la ubicación a través del GPS de tu smartphone, por lo que puedes encontrar problemas al jugar en interiores. Simplemente será mucho más difícil que te aparezcan ejemplares.
+          </article>
+          
+          <article id="cajaTexto3" class="cajaTexto">na vez que instalas el juego y creas tu avatar, ya estás listo para empezar a cazar. 
+            No obstante, dado que en el juego tienes que moverte por las calles, antes de salir a atrapar criaturas te recomendamos que configures las opciones, como activar o desactivar la música y los efectos de sonido.
+            Para ello, pulsa en la PokéBall de la pantalla del mapa y después selecciona Opciones en la esquina
+          </article>
+          
+          <article id="cajaTexto4" class="cajaTexto">La Pokedex es la maquina que recolecta datos sobre los pokemons, algo así como una enciclopedia electrónica. 
+            Cuando te encuentras con un pokemon puedes usar la Pokedex para saber de que tipo es, sus ataques, como es su apariencia, debilidades y otra información correspondiente a cada uno. 
+            En tanto en Pokemon o  en Pokemon GO la información de los pokemones la obtienes cuando atrapas o ves a uno de ellos.
+          </article>    
+        </div>
+      </div><!-- Cierra "cuadroBotonesMasTexto"  -->
+
+      <footer class="footer">
+        <button id="botonAtras1" class="botonesDelFooter">< atrás</button> 
+        <button id="botonPokedex" class= "botonesDelFooter">pokedex ></button>
+      </footer>
+
+    </div> <!-- Cierra Div Segunda Pagina-->
+
+
+<!-- Tercera Página-->
+    <div id="paginaPokedex" >
+      <header class= "Rectangulosuperior">
+        <img class= "logospequeños" src= "imagenes/logo_chico.png"/>
+      </header>
+
+      <nav class="barradetitulo">
+        <!-- PONER AQUI UN MENU HAMBURGUESA-->
+        <img class= "manito" src= "imagenes/manito.png"/>
+        <h1 class= "tituloSuperior">POKEDEX</h1>
+      </nav>
+
+      <nav id="desplegables">
+        <!-- Select Desplegable "Todos"-->
+        <select name="todos" class="selectDesplegables">
+          <option value="" selected disabled>Todos</option>
+          <option value="num">Ordenar de Menor a Mayor</option>
+          <option value="num">Ordenar de Mayor a Menor</option>
+        </select>
+
+        <!-- Select Desplegable "Tipo"-->
+        <select name="tipo" class="selectDesplegables">
+          <option value="" selected disabled>Tipo</option>
+          <option value="Bug">Bicho</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Fighting">Lucha</option>
+          <option value="Fire">Fuego</option>
+          <option value="Flying">Volador</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Grass">Planta</option>
+          <option value="Ground">Tierra</option>
+          <option value="Ice">Hielo</option>
+          <option value="Normal">Normal</option>
+          <option value="Poison">Veneno</option>
+          <option value="Psychic">Psíquico</option>
+          <option value="Rock">Roca</option>
+          <option value="Water">Agua</option>
+        </select>
+
+          <!-- Select Desplegable "Nombres"-->
+        <select name="nombres"  class="selectDesplegables">
+          <option value="" selected disabled>Nombres</option>
+          <option value="name">Ordenar A - Z</option>
+          <option value="name">Ordenar Z - A</option>
+        </select>
+
+        <!-- PONER AQUI LA BARRA DE BUSQUEDA CON LUPA-->
+
+      </nav> <!-- Cierra el Nav "desplegables"-->
+
+      <div id="cuadroMiniaturasMasCard">
+        <div id="despliegueMiniaturas"></div> <!-- Caja donde se ven las miniaturas-->
+      </div>
+
+     <!--AQUÍ PONER EL MODEL -->
+
+    
+      <footer class="footer">
+        <button id="botonAtras2" class= "botonesDelFooter">< atrás</button>
+        <button id="botonHome" class= "botonesDelFooter">home ></button>
+      </footer>
+    </div><!-- Cierra Div Tercera Pagina-->
+
+
+   <!--   <script src="main.js" type="module"></script>  -->
+   <script src="main.js" ></script>  
+
   </body>
 </html>
