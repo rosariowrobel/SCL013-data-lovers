@@ -124,6 +124,8 @@ Utilizamos una paleta de colores basada en el logo Pokemon, que es básicamente 
 
 
 ## Herramientas utilizadas en este proyecto:
+<<<<<<< HEAD
+=======
 
 - **Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
 - **Invision** para prototipado de baja fidelidad.
@@ -134,5 +136,13 @@ Utilizamos una paleta de colores basada en el logo Pokemon, que es básicamente 
 
 Para ver nuestro proyecto, pincha el siguiente [link...](poner aquí el link)
 
+>>>>>>> ef34cab9cdabca5425db391a5f1f3484d482422b
 
+- **Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
+- **Invision** para prototipado de baja fidelidad.
+- **Figma** para prototipado de alta fidelidad.
+- **Photoshop e Illustrator** para manipulación de imágenes y logos.
+- **Visual Studio Code** para el desarrollo de HTML, CSS y Javascript.
+- **Github** para el trabajo colaborativo. 
 
+Para ver nuestro proyecto, pincha el siguiente [link...](poner aquí el link)
