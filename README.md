@@ -41,7 +41,7 @@ De la consulta obtuvimos los siguientes resultados:
 <a href="https://ibb.co/LY9d5JZ"><img src="https://i.ibb.co/mbh58Xc/preg-05.jpg" alt="preg-05" border="0"></a>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/wWbxTPb/comentarios-05.jpg" alt="comentarios-05" border="0"></a>
 
-## Conclusiones de las entrevistas:
+### Conclusiones de las entrevistas:
 Son todos principiantes en el juego y les interesa saber sobre él y sus características. También les interesa que la aplicación sea sencilla y que no requiera manual, y la utilizarían cuando quisieran empezar a jugar a Pokemon GO.
 
 ## Historias de Usuario:
@@ -104,7 +104,7 @@ Finalmente el flujograma quedó así:
 <a href="https://ibb.co/xg3mX7W"><img src="https://i.ibb.co/n1R36L9/02.jpg" alt="02" border="0"></a>
 <a href="https://ibb.co/P5XNkFz"><img src="https://i.ibb.co/SKYPS57/03.jpg" alt="03" border="0"></a>
 
-## Testeo del prototipo en Maze:
+### Testeo del prototipo en Maze:
 Hicimos el testeo en 5 usuarios
 https://t.maze.design/10576562
 
@@ -123,10 +123,12 @@ Utilizamos una paleta de colores basada en el logo Pokemon, que es básicamente 
 <a href="https://ibb.co/b5kB2sR"><img src="https://i.ibb.co/7tqWRnN/Paleta-de-color.jpg" alt="Paleta-de-color" border="0"></a>
 
 
-### Desarrollo:
+## Herramientas utilizadas en este proyecto:
 
-Utilizamos:
 - **Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
+- **Invision** para prototipado de baja fidelidad.
+- **Figma** para prototipado de alta fidelidad.
+- **Photoshop e Illustrator** para manipulación de imágenes y logos.
 - **Visual Studio Code** para el desarrollo de HTML, CSS y Javascript.
 - **Github** para el trabajo colaborativo. 
 
