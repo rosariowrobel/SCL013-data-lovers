@@ -11,24 +11,24 @@ Utilizamos un formulario de Google en el cual hicimos las siguientes preguntas p
 
 **1.- ¿Qué nivel de conocimiento crees que  tienes sobre ‘Pokemón GO’?**
 
--Ninguno
--Principiante
--Avanzado
+- Ninguno
+- Principiante
+- Avanzado
 
 **2.- ¿Qué información esperas encontrar en nuestra web?**
--Historia sobre la serie y sus comienzos
--Sobre qué trata el juego y sus características
--Conocer sobre Pokemon
+- Historia sobre la serie y sus comienzos
+- Sobre qué trata el juego y sus características
+- Conocer sobre Pokemon
 
 **3.- ¿Qué características esperas encontrar en nuestra web?**
--Que tenga marca, estilo propio y sea reconocible
--Que sea sencilla y que no requiera manual
--Que sea ágil y práctica
+- Que tenga marca, estilo propio y sea reconocible
+- Que sea sencilla y que no requiera manual
+- Que sea ágil y práctica
 
 **4.- ¿En qué momento utilizas o utilizarías el producto?**
--Cuando quieras empezar a jugar a Pokemon GO
--Cuando necesiten información de qué es y cómo funciona el juego
--Cuando quieras conocer más de Pokemones
+- Cuando quieras empezar a jugar a Pokemon GO
+- Cuando necesiten información de qué es y cómo funciona el juego
+- Cuando quieras conocer más de Pokemones
 
 https://docs.google.com/forms/d/e/1FAIpQLScxOv6tyqSe6n24crVnMYTGq7HdQuu9oQ3IsBw_I4rJ0N3EYQ/viewform?usp=sf_link
 
@@ -47,27 +47,27 @@ Son todos principiantes en el juego y les interesa saber sobre él y sus caracte
 ## Historias de Usuario:
 
 ### Historia de Usuario 1: 
--YO COMO... Jugador inexperto
--QUIERO...saber cómo se juega
--PARA...comenzar a jugar
+- YO COMO... Jugador inexperto
+- QUIERO...saber cómo se juega
+- PARA...comenzar a jugar
 
--**Criterios de aceptación:** El usuario debe acceder a una página donde aparezcan los conceptos básicos del juego y cómo se juega.
+- **Criterios de aceptación:** El usuario debe acceder a una página donde aparezcan los conceptos básicos del juego y cómo se juega.
 
 
 ### Historia de Usuario 2:
--YO COMO...jugador principiante
--QUIERO...conocer todos los personajes
--PARA...interiorizarme sobre sus nombres y características
+- YO COMO...jugador principiante
+- QUIERO...conocer todos los personajes
+- PARA...interiorizarme sobre sus nombres y características
 
--**Criterios de aceptación:** El usuario debe acceder a una página donde vea todos los personajes y sus características.
+- **Criterios de aceptación:** El usuario debe acceder a una página donde vea todos los personajes y sus características.
 
 
 ### Historia de Usuario 3:
--YO COMO...jugador principiante
--QUIERO...conocer las características de los personajes
--PARA...elegir el que más me convenga en una batalla
+- YO COMO...jugador principiante
+- QUIERO...conocer las características de los personajes
+- PARA...elegir el que más me convenga en una batalla
 
--**Criterios de aceptación:** El usuario poder filtrar los personajes según las características que esté buscando..
+- **Criterios de aceptación:** El usuario poder filtrar los personajes según las características que esté buscando..
 
 ## ETAPA DE PROTOTIPADO:
 
@@ -113,7 +113,7 @@ https://t.maze.design/10576562
 
 
 
-## Criterios de diseño:
+### Criterios de diseño:
 Prorizamos un diseño simple y limpio, no tan saturado de color.
 
 
@@ -123,12 +123,12 @@ Utilizamos una paleta de colores basada en el logo Pokemon, que es básicamente 
 <a href="https://ibb.co/b5kB2sR"><img src="https://i.ibb.co/7tqWRnN/Paleta-de-color.jpg" alt="Paleta-de-color" border="0"></a>
 
 
-## Desarrollo:
+### Desarrollo:
 
 Utilizamos:
--**Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
--**Visual Studio Code** para el desarrollo de HTML, CSS y Javascript.
--**Github** para el trabajo colaborativo. 
+- **Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
+- **Visual Studio Code** para el desarrollo de HTML, CSS y Javascript.
+- **Github** para el trabajo colaborativo. 
 
 Para ver nuestro proyecto, pincha el siguiente [link...](poner aquí el link)
 
