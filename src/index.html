@@ -44,32 +44,32 @@
             Pokémon GO, es un juego desarrollado por Nantic y The Pokémon Company y distribuido por Nintendo para dispositivos iOS y Android. Lanzado el 2016, funcionando hasta la actualidad.
             ¡VE EL TRAILER DE POKEMON GO
             <a href="https://youtu.be/vZuh-FX_Jqo" target="_blank">AQUÍ!</a>
-          </article> 
+          </article>
 
           <article id="cajaTexto2" class="cajaTexto">Una vez que instalas el juego y creas tu avatar, ya estás listo para empezar a cazar. No obstante, dado que en el juego tienes que moverte por las calles, antes de salir a atrapar criaturas te recomendamos que configures las opciones, como activar o desactivar la música y los efectos de sonido.
             Para ello, pulsa en la PokéBall de la pantalla del mapa y después selecciona Opciones en la esquina superior derecha. Además de la música o la vibración, también dispones de un modo de ahorro de batería para gastar menos energía durante el juego.
             <a href="https://imgbb.com/"><img src="https://i.ibb.co/brRp0br/01png.png"></a>
             El modo ahorro hará que al bajar el móvil la pantalla se apague. De esta forma el consumo de batería será mucho menor. Esta característica permite mejorar el consumo de forma notable, algo que tu móvil agradecerá.
-            Eso sí, recuerda que la app debe estar abierta en primer plano. Si pulsas el botón Home y la dejas en segundo plano, o si bloqueas el móvil, no podrás capturar ningún Pokémon. 
+            Eso sí, recuerda que la app debe estar abierta en primer plano. Si pulsas el botón Home y la dejas en segundo plano, o si bloqueas el móvil, no podrás capturar ningún Pokémon.
             Lo mejor es que en ajustes de tu teléfono, configures la pantalla para que permanezca activa el mayor tiempo posible.
-            Captura un Pokémon. Para atraparlo tienes que moverte por las calles y dar con ellos. Verás tu avatar en el mapa, que se desplazará en la misma dirección en la que camines. 
+            Captura un Pokémon. Para atraparlo tienes que moverte por las calles y dar con ellos. Verás tu avatar en el mapa, que se desplazará en la misma dirección en la que camines.
             Ten en cuenta que el juego toma los datos de la ubicación a través del GPS de tu smartphone, por lo que puedes encontrar problemas al jugar en interiores. Simplemente será mucho más difícil que te aparezcan ejemplares.
           </article>
-          
-          <article id="cajaTexto3" class="cajaTexto">na vez que instalas el juego y creas tu avatar, ya estás listo para empezar a cazar. 
+
+          <article id="cajaTexto3" class="cajaTexto">na vez que instalas el juego y creas tu avatar, ya estás listo para empezar a cazar.
             No obstante, dado que en el juego tienes que moverte por las calles, antes de salir a atrapar criaturas te recomendamos que configures las opciones, como activar o desactivar la música y los efectos de sonido.
             Para ello, pulsa en la PokéBall de la pantalla del mapa y después selecciona Opciones en la esquina
           </article>
-          
-          <article id="cajaTexto4" class="cajaTexto">La Pokedex es la maquina que recolecta datos sobre los pokemons, algo así como una enciclopedia electrónica. 
-            Cuando te encuentras con un pokemon puedes usar la Pokedex para saber de que tipo es, sus ataques, como es su apariencia, debilidades y otra información correspondiente a cada uno. 
+
+          <article id="cajaTexto4" class="cajaTexto">La Pokedex es la maquina que recolecta datos sobre los pokemons, algo así como una enciclopedia electrónica.
+            Cuando te encuentras con un pokemon puedes usar la Pokedex para saber de que tipo es, sus ataques, como es su apariencia, debilidades y otra información correspondiente a cada uno.
             En tanto en Pokemon o  en Pokemon GO la información de los pokemones la obtienes cuando atrapas o ves a uno de ellos.
-          </article>    
+          </article>
         </div>
       </div><!-- Cierra "cuadroBotonesMasTexto"  -->
 
       <footer class="footer">
-        <button id="botonAtras1" class="botonesDelFooter">< atrás</button> 
+        <button id="botonAtras1" class="botonesDelFooter">< atrás</button>
         <button id="botonPokedex" class= "botonesDelFooter">pokedex ></button>
       </footer>
 
@@ -77,7 +77,7 @@
 
 
 <!-- Tercera Página-->
-    <div id="paginaPokedex" >
+    <div class="paginaPokedex" >
       <header class= "Rectangulosuperior">
         <img class= "logospequeños" src= "imagenes/logo_chico.png"/>
       </header>
@@ -97,7 +97,7 @@
         </select>
 
         <!-- Select Desplegable "Tipo"-->
-        <select name="tipo" class="selectDesplegables">
+        <select id="type" name="" class="selectDesplegables">
           <option value="" selected disabled>Tipo</option>
           <option value="Bug">Bicho</option>
           <option value="Dragon">Dragón</option>
@@ -127,13 +127,16 @@
 
       </nav> <!-- Cierra el Nav "desplegables"-->
 
-      <div id="cuadroMiniaturasMasCard">
-        <div id="despliegueMiniaturas"></div> <!-- Caja donde se ven las miniaturas-->
-      </div>
+      <!--<div id="cuadroMiniaturasMasCard">
+        <div id="despliegueMiniaturas"></div>  Caja donde se ven las miniaturas
+      </div>-->
 
      <!--AQUÍ PONER EL MODEL -->
+     <section id="modalContainer" class="modalContainer"> </section>
+     <section id= "container" class= "container"></section>
 
-    
+
+
       <footer class="footer">
         <button id="botonAtras2" class= "botonesDelFooter">< atrás</button>
         <button id="botonHome" class= "botonesDelFooter">home ></button>
@@ -141,8 +144,12 @@
     </div><!-- Cierra Div Tercera Pagina-->
 
 
-   <!--   <script src="main.js" type="module"></script>  -->
-   <script src="main.js" ></script>  
+
+    <div id="root"></div>
+
+
+
+   <script src="main.js" type="module"></script>
 
   </body>
 </html>

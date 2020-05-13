@@ -1,43 +1,43 @@
 *{
-    margin:0;
-    padding: 0;
+  margin:0;
+  padding: 0;
 }
 
 
 /*Primera página PORTADA */
 #portada {
-    background-image: url(imagenes/Portada_iMac.jpg);
-    height: 720px;
-    width: 1280px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  background-image: url(imagenes/Portada_iMac.jpg);
+  height: 720px;
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #botonInicio {
-    margin-bottom: 60px;
-    display: flex;
-    align-self: flex-end;
-    background-color: transparent;
-    border-style: none;
-    cursor: pointer;
+  margin-bottom: 60px;
+  display: flex;
+  align-self: flex-end;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
 }
 
 #botonComenzar  {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-self: flex-end;
-    background-color: transparent;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-self: flex-end;
+  background-color: transparent;
 }
 
 #botonComenzar:hover{
-  /*  xxxxxxxxxxxx: url(imagenes/PokeBola_hover.png); */
-    height: 100px;
-    width: 100px;
-    display: flex;
-    align-self: flex-end;
-    background-color: transparent;
+/*  xxxxxxxxxxxx: url(imagenes/PokeBola_hover.png); */
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-self: flex-end;
+  background-color: transparent;
 }
 
 
@@ -45,235 +45,335 @@
 
 /* Header */
 .Rectangulosuperior {
-    width: 1280px;
-    height: 96px;
-    background: linear-gradient(to right, #72C6D1 0%, #C0F8E4 100%);
-    /*text-align-last: justify;*/
-    /* vertical-align: text-top; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  /* NO RESULTA :c*/
+  width: 1280px;
+  height: 96px;
+  background: linear-gradient(to right, #72C6D1 0%, #C0F8E4 100%);
+  /*text-align-last: justify;*/
+  /* vertical-align: text-top; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  /* NO RESULTA :c*/
 }
 
 .logospequeños {
-    margin-left: 40px;
-    margin-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 /* barra Nav */
 .barradetitulo {
-    width: 1280px;
-    height: 52px;
-    background-color: #03A3C6;
-    display: flex;
-    justify-content: right;
-    flex-direction: row-reverse;
+  width: 1280px;
+  height: 52px;
+  background-color: #03A3C6;
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
 }
 
 .tituloSuperior {
-    margin-right: 50px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color:  white;
-    font-style: normal;
-    font-size: 33px;
-    text-align: right;
-    align-content: center;
+  margin-right: 50px;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color:  white;
+  font-style: normal;
+  font-size: 33px;
+  text-align: right;
+  align-content: center;
 }
 
 .manito {
-    display: flex;
-    align-self: flex-end;
-    margin-right: 40px;
+  display: flex;
+  align-self: flex-end;
+  margin-right: 40px;
 }
 
 /*FOOTER*/
 .footer {
-    height: 92px;
-    width: 1280px;
-    background-image: url("imagenes/Curva-footer.png") ;
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  height: 92px;
+  width: 1280px;
+  background-image: url("imagenes/Curva-footer.png") ;
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .botonesDelFooter {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    margin: 60px;
-    margin-bottom: 20px;
-    border: none;
-    text-align: center;
-    background-color: transparent;
-    cursor: pointer;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 60px;
+  margin-bottom: 20px;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 
 /*Segunda página CONCEPTOS */
 #paginaConceptos {
-    height: 720px;
-    width: 1280px;
+  height: 720px;
+  width: 1280px;
 }
 
 #cuadroBotonesMasTexto {
-    width: 1280px;
-    height: 480px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 1280px;
+  height: 480px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #cajaBotonesCostado {
-    width: 450px;
-    height: 370px;
-    margin-left: 40px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  width: 450px;
+  height: 370px;
+  margin-left: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .botonesCostado {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #03A3C6;
-    font-size: 18px;
-    text-align: left;
-    background-color: #D5F0F0;
-    margin: 8px;
-    padding: 10px;
-    height: 50px;
-    width: 430px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0s;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #03A3C6;
+  font-size: 18px;
+  text-align: left;
+  background-color: #D5F0F0;
+  margin: 8px;
+  padding: 10px;
+  height: 50px;
+  width: 430px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0s;
 }
 
 .botonesCostado:hover{
-    color: #FFFFFF;
-    background-color: #03A3C6;
+  color: #FFFFFF;
+  background-color: #03A3C6;
 }
 
 .cajaTexto {
-    width : 600px;
-    height :370px;
-    padding: 20px;
-    margin-right: 60px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color :#03A3C6;
-    border-radius: 10px;
-    /*border : solid 1px #A3A3A3; */
+  width : 600px;
+  height :370px;
+  padding: 20px;
+  margin-right: 60px;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color :#03A3C6;
+  border-radius: 10px;
+  /*border : solid 1px #A3A3A3; */
 
-    /*sombra*/
-    -webkit-box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
-    -moz-box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
-    box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
+  /*sombra*/
+  -webkit-box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
+  -moz-box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
+  box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
 
-    /*FlexBox*/
-    overflow : auto; /*el scroll aparece solo si el contenido exede el tamaño de la caja*/
-    align-items: flex-end;
+  /*FlexBox*/
+  overflow : auto; /*el scroll aparece solo si el contenido exede el tamaño de la caja*/
+  align-items: flex-end;
 }
 
 /*Cajas que contien información de Conceptos Básicos*/
 #cajaTexto1 {
-    display: none;
+  display: none;
 }
 
 #cajaTexto2 {
-    display: none;
+  display: none;
 }
 
 #cajaTexto3 {
-    display: none;
+  display: none;
 }
 
 #cajaTexto4 {
-    display: none;
+  display: none;
 }
 
 /*Texto que muestra la información de conceptos básicos*/
 p {
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #03A3C6;
-    font-size: 18px;
-    text-align: justify;
-    background-color: #D5F0F0;
-    margin: 8px;
-    padding: 10px;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #03A3C6;
+  font-size: 18px;
+  text-align: justify;
+  background-color: #D5F0F0;
+  margin: 8px;
+  padding: 10px;
 }
 
 
 /*Tercera página POKEDEX*/
 #paginaPokedex {
-   /* display:none;  */
-    height: 720px;
-    width: 1280px;
+ /* display:none;  */
+  height: 720px;
+  width: 1280px;
 }
 
 /*Barra de select desplegables*/
 #desplegables {
-    width : 1280px;
-    height :57px;
-    margin-left: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction: row;
-    justify-content: flex-start;
+  width : 1280px;
+  height :57px;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  justify-content: flex-start;
 
 }
 
 .selectDesplegables {
-    height: 30px;
-    width: 160px;
-    margin: 20px;
-    padding-left: 20px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #03A3C6;
-    font-size: 16px;
-    text-align: center;
-    background-color: #D5F0F0;
-    border-radius: 10px;
-    border-color: white;
-    cursor: pointer;
-    transition-duration: 0s;
-    display: flex;
-    }
+  height: 30px;
+  width: 160px;
+  margin: 20px;
+  padding-left: 20px;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #03A3C6;
+  font-size: 16px;
+  text-align: center;
+  background-color: #D5F0F0;
+  border-radius: 10px;
+  border-color: white;
+  cursor: pointer;
+  transition-duration: 0s;
+  display: flex;
+  }
 
 .selectDesplegables:hover{
-    color: #FFFFFF;
-    background-color: #03A3C6;
-    }
+  color: #FFFFFF;
+  background-color: #03A3C6;
+  }
 
-/* Estilo de cajas contenedoras */
+/* Estilo de cajas contenedoras
 #cuadroMiniaturasMasCard {
-    width: 1280px;
-    height: 420px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+  width: 1280px;
+  height: 420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}*/
 
-#despliegueMiniaturas {
-    width : 1200px;
-    height :370px;
-    margin: 40px;
-    background : white;
-    color :#03A3C6;
-    overflow-y : scroll;
-    display: flex;
+/*#despliegueMiniaturas {
+  width : 1200px;
+  height :370px;
+  margin: 40px;
+  background : white;
+  color :#03A3C6;
+  overflow-y : scroll;
+  display: flex;
 }
 
 #card {
-    width : 450px;
-    height :370px;
-    margin-right: 40px ;
-    color :#03A3C6;
-    border : solid 1px #A3A3A3;
-    border-radius: 10px;
-    display: flex;
+  width : 450px;
+  height :370px;
+  margin-right: 40px ;
+  color :#03A3C6;
+  border : solid 1px #A3A3A3;
+  border-radius: 10px;
+  display: flex;
+}
+*/
+/*clase del container*/
+
+
+.modal{
+  width: 40%;
+  height: 100vh;
+  background: rgba(0,0,0,0,8);
+  position: center;
+  display: flex;
+  z-index: -1;
+  animation: modal 1s 1s forwards;
+  opacity: 0;
 }
 
 
 
+    body{
+        background: url(fondo-simple.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+
+/*Buscador*/
+#search{
+    margin-left: 100px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 8%;
+
+  }
+/*contenedor de las tarjetas pokemones*/
+        .container {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 1%;
+                box-sizing: border-box;
+                justify-content: space-around;
+                align-content: center;
+                text-align: center;
+                width: 100%;
+            }
+/*Cartas Pokemones*/
+            .cards {
+            padding: 20px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin: 15px;
+            width: 100px;
+            height: 180px;
+            text-align: center;
+            border-radius: 6%;
+            background: linear-gradient(#FEFFDF, #03A3C6);
+            opacity: 0.7;
+            box-shadow: -2px 2px 10px black;
+        }
+
+          .cards:hover {
+            opacity: 1;
+          }
+/*Texto cartas*/
+    h3 {
+        margin: 5px;
+        color: #42687e;
+        font-family: 'Lato', sans-serif;
+    }
+    h4 {
+        margin: 0px;
+        color: #42687e;
+        font-family: 'Lato', sans-serif;
+    }
+
+/*modal*/
+.modalCards {
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    padding: 1.5%;
+    padding-bottom: 50px;
+    margin-left: 35%;
+    width: 30%;
+    height: 40%;
+    border-radius: 6%;
+    background: #21feec; opacity: 0.9;
+}
+.modalCards.close {
+float: right;
+font-size: 28px;
+font-family: 'Lato', sans-serif;
+}
+
+.modalCards.close:hover,
+.modalCards.close:focus {
+text-decoration: none;
+cursor: pointer;
+}
