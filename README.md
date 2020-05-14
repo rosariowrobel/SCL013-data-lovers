@@ -1,3 +1,5 @@
+
+<a href="https://ibb.co/q7ycbpD"><img src="https://i.ibb.co/NtVJwKF/Logo-Pokeguia-01.png" alt="Logo-Pokeguia-01" border="0"></a>
 # PROYECTO POKEGUÍA
 
 ## Integrantes:
@@ -106,11 +108,12 @@ Finalmente el flujograma quedó así:
 
 ### Testeo del prototipo en Maze:
 Hicimos el testeo en 5 usuarios
-https://t.maze.design/10576562
 
 ### Resultado del testeo en Maze:
 
+<a href="https://ibb.co/0rF4bqJ"><img src="https://i.ibb.co/M7Gw0nN/resultado-Testeo-Maze-2.jpg" alt="resultado-Testeo-Maze-2" border="0"></a>
 
+<a href="https://ibb.co/89w40qc"><img src="https://i.ibb.co/TtGqk6L/resultado-Testeo-Maze-3.jpg" alt="resultado-Testeo-Maze-3" border="0"></a>
 
 
 ### Criterios de diseño:
@@ -123,9 +126,7 @@ Utilizamos una paleta de colores basada en el logo Pokemon, que es básicamente 
 <a href="https://ibb.co/b5kB2sR"><img src="https://i.ibb.co/7tqWRnN/Paleta-de-color.jpg" alt="Paleta-de-color" border="0"></a>
 
 
-## Herramientas utilizadas en este proyecto:
-<<<<<<< HEAD
-=======
+## Herramientas utilizadas en este proyecto:           
 
 - **Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
 - **Invision** para prototipado de baja fidelidad.
@@ -134,15 +135,4 @@ Utilizamos una paleta de colores basada en el logo Pokemon, que es básicamente 
 - **Visual Studio Code** para el desarrollo de HTML, CSS y Javascript.
 - **Github** para el trabajo colaborativo. 
 
-Para ver nuestro proyecto, pincha el siguiente [link...](poner aquí el link)
-
->>>>>>> ef34cab9cdabca5425db391a5f1f3484d482422b
-
-- **Trello** para la organización del proyecto. [Ir a nuestro tablero](https://trello.com/invite/b/EnEEXWGr/be5f00c5e53936eab55b6a5a562a41e6/proyecto-2-data-lovers-pokegu%C3%ADa)
-- **Invision** para prototipado de baja fidelidad.
-- **Figma** para prototipado de alta fidelidad.
-- **Photoshop e Illustrator** para manipulación de imágenes y logos.
-- **Visual Studio Code** para el desarrollo de HTML, CSS y Javascript.
-- **Github** para el trabajo colaborativo. 
-
-Para ver nuestro proyecto, pincha el siguiente [link...](poner aquí el link)
+Para ver nuestro proyecto, pincha el siguiente [link...](https://rosariowrobel.github.io/SCL013-data-lovers/src/index.html)
