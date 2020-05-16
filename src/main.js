@@ -9,14 +9,16 @@ console.log (data);
 */
 
 /*//////////////////////////////////////////////////////////////////*/
-
+//Manipulacion de la data
 import data from './data/pokemon/pokemon.js';
 import {filterType, pokeId} from './data.js';
 
 
 
+
+
 console.log(data);
-//pkById
+
 //FUncion para que aparescan todos los pokemones (Historia del usuario 2)
 const filterData = (select) => {
   let filter = "";
