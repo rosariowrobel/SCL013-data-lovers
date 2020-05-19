@@ -1,379 +1,412 @@
-*{
-  margin:0;
-  padding: 0;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
 }
 
 
-/*Primera página PORTADA */
-#portada {
-  background-image: url(imagenes/Portada_iMac.jpg);
-  height: 720px;
-  width: 1280px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+body {
+	background: rgb(215, 228, 241);
+  font-family: 'Roboto', sans-serif;
+  display: grid !important;
+  }
+
+
+/*PRIMERA PAGINA PORTADA */
+
+.contenedorPortada{
+	width: 100%;
+/*	max-width: 100%; */
+	margin: 1.25rem auto;  
+	display: grid;
+	grid-gap: 0rem; 
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"imagenPortada imagenPortada imagenPortada"
+	"imagenPortada imagenPortada imagenPortada"
+	"imagenPortada imagenPortada imagenPortada"
+	"imagenPortada imagenPortada imagenPortada"
+ 	"franjaIncicio franjaIncicio franjaIncicio" ;
 }
 
-#botonInicio {
-  margin-bottom: 60px;
-  display: flex;
-  align-self: flex-end;
-  background-color: transparent;
-  border-style: none;
-  cursor: pointer;
+.contenedorPortada > div,
+.contenedorPortada .imagenPortada,
+.contenedorPortada .franjaIncicio
+{
+	background: #fff;
+	padding: 0rem;
+	border-radius: 0.25;
 }
 
-#botonComenzar  {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  align-self: flex-end;
-  background-color: transparent;
+.contenedorPortada .imagenPortada{
+	display:block;
+
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: flex; 
+	grid-area: imagenPortada;
 }
 
-#botonComenzar:hover{
-/*  xxxxxxxxxxxx: url(imagenes/PokeBola_hover.png); */
-  height: 100px;
-  width: 100px;
-  display: flex;
-  align-self: flex-end;
-  background-color: transparent;
+.imagenResponsive {
+	display: none;
+}
+.contenedorPortada .franjaIncicio{
+	background-color: rgb(16, 65, 121);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	grid-area: franjaIncicio;
 }
 
-
-/*ELEMENTOS QUE APARECEN EN TODAS LAS PAGINAS*/
-
-/* Header */
-.Rectangulosuperior {
-  width: 1280px;
-  height: 96px;
-  background: linear-gradient(to right, #72C6D1 0%, #C0F8E4 100%);
-  /*text-align-last: justify;*/
-  /* vertical-align: text-top; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;  /* NO RESULTA :c*/
+.btn-inicio{
+	border-style: none;
+	background-color: transparent;
+}
+@media screen and (max-width: 700px){
+	.contenedorPortada {
+	grid-template-areas: 
+	"imagenPortada  imagenPortada  imagenPortada"
+	"imagenPortada  imagenPortada  imagenPortada"
+	"imagenPortada  imagenPortada  imagenPortada"
+	"imagenPortada  imagenPortada  imagenPortada"
+ 	"franjaIncicio  franjaIncicio  franjaIncicio";
+	}
+	.contenedorPortada .imagenPortada{
+		display:none;
+	/*	background-image: url(imagenes/portada_responsive.png); */
+		width: 100%;
+		object-fit: cover;
+		height: auto;
+		display: flex; 
+		grid-area: imagenPortada;
+	}
+	.contenedorPortada .imagenResponsive {
+		display: block;
+	}
 }
 
-.logospequeños {
-  margin-left: 40px;
-  margin-right: 40px;
+/*
+	.imagenPortada {
+		background-image: url(imagenes/portada_responsive.png);
+	}
+
+*/	
+
+
+/*SEGUNDA PAGINA*/
+.contenedor1 {
+	width: 100%;
+	/*max-width: 1200px;*/
+	margin: 1.25rem auto; 
+	display: grid;
+	grid-gap: 0rem; 
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, auto);
+
+  grid-template-areas: 
+  	"header header header"
+	"nav nav nav"
+	"selects selects selects"
+	"sidebar contenido contenido"
+    "sidebar contenido contenido"
+	"footer footer footer";
 }
 
-/* barra Nav */
-.barradetitulo {
-  width: 1280px;
-  height: 52px;
-  background-color: #03A3C6;
-  display: flex;
-  justify-content: right;
-  flex-direction: row-reverse;
+.contenedor1 > div,
+.contenedor1 .header,
+.contenedor1 .nav,
+.contenedor1 .selects,
+.contenedor1 .contenido,
+.contenedor1 .contenido2,
+.contenedor1 .sidebar,
+.contenedor1 .footer 
+{
+	background: #fff;
+	padding: 1.25rem;
+	border-radius: 0.25;
 }
 
-.tituloSuperior {
-  margin-right: 50px;
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color:  white;
-  font-style: normal;
-  font-size: 33px;
-  text-align: right;
-  align-content: center;
+.contenedor1 .header {
+	background: linear-gradient(to right, rgb(3, 186, 241) 0%, #C0F8E4 100%);
+	padding: 0.1rem;
+	color: #fff;
+	grid-area: header;
 }
 
-.manito {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 40px;
+.contenedor1 .nav{
+	padding: 0.5rem;
+	background: linear-gradient(to right, #002148 0%, #00C2FA 100%);
+	color: rgb(235, 247, 250);
+	font-size: 1.1em;
+	text-align: right;
+	grid-area: nav;
 }
 
-/*FOOTER*/
-.footer {
-  height: 92px;
-  width: 1280px;
-  background-image: url("imagenes/Curva-footer.png") ;
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-end;
+.contenedor1 .contenido {
+	padding: 3rem;
+	font-size: 1.2em;
+	color: #08034d;
+	grid-area: contenido;
 }
 
-.botonesDelFooter {
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: #ffffff;
-  font-size: 18px;
-  margin: 60px;
-  margin-bottom: 20px;
-  border: none;
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
+.contenedor1 .contenido2 {
+	padding: 2rem;
+	font-size: 1.2em;
+	color: #08034d;
+/*	overflow : auto;      /*el scroll aparece solo si el contenido exede el tamaño de la caja*/ 
+	grid-area: contenido;
 }
 
-
-/*Segunda página CONCEPTOS */
-#paginaConceptos {
-  height: 720px;
-  width: 1280px;
-}
-
-#cuadroBotonesMasTexto {
-  width: 1280px;
-  height: 480px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#cajaBotonesCostado {
-  width: 450px;
-  height: 370px;
-  margin-left: 40px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+.contenedor1 .sidebar {
+	grid-column: 1 / 2;
+	background: white;
+	text-align: left;
+	display: flex;
+	align-items: left;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 50px;
+	grid-area: sidebar;
 }
 
 .botonesCostado {
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: #03A3C6;
-  font-size: 18px;
-  text-align: left;
-  background-color: #D5F0F0;
-  margin: 8px;
-  padding: 10px;
-  height: 50px;
-  width: 430px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition-duration: 0s;
+    color:white;
+    font-size: 1.1em;
+	text-size-adjust: 1em;
+    background-color:  #03A3C6;
+	margin: 1rem;
+    padding: 0.5rem;
+    height: 4rem;
+    width: 100%;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition-duration: 0s;
 }
 
-.botonesCostado:hover{
-  color: #FFFFFF;
-  background-color: #03A3C6;
+.contenedor1 .footer {
+	padding: 0.5rem;
+	background: linear-gradient(to left, #002148 0%, #00C2FA 100%);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	grid-area: footer;
 }
 
-.cajaTexto {
-  width : 600px;
-  height :370px;
-  padding: 20px;
-  margin-right: 60px;
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color :#03A3C6;
-  border-radius: 10px;
-  /*border : solid 1px #A3A3A3; */
-
-  /*sombra*/
-  -webkit-box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
-  -moz-box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
-  box-shadow: 10px 10px 7px -5px rgba(196,196,196,1);
-
-  /*FlexBox*/
-  overflow : auto; /*el scroll aparece solo si el contenido exede el tamaño de la caja*/
-  align-items: flex-end;
+.botonesDelFooter {
+   	color: #ffffff;
+    font-size: 1.2em;
+    margin: 0.3rem;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-/*Cajas que contien información de Conceptos Básicos*/
-#cajaTexto1 {
-  display: none;
-}
-
-#cajaTexto2 {
-  display: none;
-}
-
-#cajaTexto3 {
-  display: none;
-}
-
-#cajaTexto4 {
-  display: none;
-}
-
-/*Texto que muestra la información de conceptos básicos*/
-p {
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: #03A3C6;
-  font-size: 18px;
-  text-align: justify;
-  background-color: #D5F0F0;
-  margin: 8px;
-  padding: 10px;
+@media screen and (max-width: 700px){
+	.contenedor1 {
+	grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"selects selects selects"
+        "sidebar sidebar sidebar"
+        "contenido contenido contenido"
+		"footer footer footer";
+	}
 }
 
 
-/*Tercera página POKEDEX*/
-#paginaPokedex {
- /* display:none;  */
-  height: 720px;
-  width: 1280px;
+/*TERCERA PAGINA*/
+.contenedor2 {
+	width: 100%;
+	/* max-width: 1200px; */
+	margin: 1.25rem auto;
+	display: grid;
+	grid-gap: 0rem;  
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, auto);
+
+  grid-template-areas: 
+  	"header header header"
+	"nav nav nav"
+	"selects selects selects"
+	"contenido contenido contenido"
+	"footer footer footer";
 }
 
-/*Barra de select desplegables*/
-#desplegables {
-  width : 1280px;
-  height :57px;
-  margin-left: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  flex-direction: row;
-  justify-content: flex-start;
+.contenedor2 > div,
+.contenedor2 .header,
+.contenedor2 .nav,
+.contenedor2 .selects,
+.contenedor2 .contenido,
+.contenedor2 .footer 
+{
+	background: #fff;
+	padding: 1.25rem;
+	border-radius: 0.25;
+}
 
+.contenedor2 .header {
+	background: linear-gradient(to right, rgb(3, 186, 241) 0%, #C0F8E4 100%);
+	padding: 0.1rem;
+	color: #fff;
+	grid-area: header;
+}
+
+.contenedor2 .nav{
+	padding: 0.5rem;
+	background: linear-gradient(to right, #002148 0%, #00C2FA 100%);
+	color: rgb(235, 247, 250);
+	font-size: 1.1em;
+	text-align: right;
+	grid-area: nav;
+}
+
+.contenedor2 .selects{
+	grid-column: 1 / 6;
+    width: 100%; 
+	display: flex;
+	justify-items: center;
+	align-items: flex-start;
+	justify-content: space-around;
+	grid-area: selects;
 }
 
 .selectDesplegables {
-  height: 30px;
-  width: 160px;
-  margin: 20px;
-  padding-left: 20px;
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: #03A3C6;
-  font-size: 16px;
+	height: 2.5rem;
+    width: 20rem;
+	padding: 0.5rem;
+	color:white;
+    font-size: 1.1em;
+	text-align: center;
+    background-color:  #03A3C6;
+	margin: 0.6rem; 
+	border-radius: 0.7rem;  
+    cursor: pointer;
+	transition-duration: 0s;
+	display: flex;
+	grid-area: selects;
+}
+
+.contenedor2 .contenido {
+	/*	height: 25rem;*/
+  width: 100%; 
+	padding: 2rem;
+	font-size: 1.2em;
+	color: #08034d;
+  grid-area: contenido;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-content: center;
   text-align: center;
-  background-color: #D5F0F0;
-  border-radius: 10px;
-  border-color: white;
-  cursor: pointer;
-  transition-duration: 0s;
-  display: flex;
-  }
-
-.selectDesplegables:hover{
-  color: #FFFFFF;
-  background-color: #03A3C6;
-  }
-
-/* Estilo de cajas contenedoras
-#cuadroMiniaturasMasCard {
-  width: 1280px;
-  height: 420px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}*/
-
-/*#despliegueMiniaturas {
-  width : 1200px;
-  height :370px;
-  margin: 40px;
-  background : white;
-  color :#03A3C6;
-  overflow-y : scroll;
-  display: flex;
+  width: 100%;
+	/*overflow : auto;*/ /*el scroll aparece solo si el contenido exede el tamaño de la caja*/
+}
+.contenedor2 .footer {
+	padding: 0.5rem;
+	background: linear-gradient(to left, #002148 0%, #00C2FA 100%);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	grid-area: footer;
 }
 
-#card {
-  width : 450px;
-  height :370px;
-  margin-right: 40px ;
-  color :#03A3C6;
-  border : solid 1px #A3A3A3;
-  border-radius: 10px;
-  display: flex;
-}
-*/
-/*clase del container*/
-
-
-.modal{
-  width: 40%;
-  height: 100vh;
-  background: rgba(0,0,0,0,8);
-  position: center;
-  display: flex;
-  z-index: -1;
-  animation: modal 1s 1s forwards;
-  opacity: 0;
-}
-
-
-
-    body{
-        background: url(fondo-simple.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
-    }
-
-/*Buscador*/
-#search{
-    margin-left: 100px;
-    font-family: 'Lato', sans-serif;
-    border-radius: 8%;
-
-  }
-/*contenedor de las tarjetas pokemones*/
-        .container {
-                display: flex;
-                flex-wrap: wrap;
-                padding-left: 5%;
-                padding-right: 5%;
-                padding-top: 1%;
-                box-sizing: border-box;
-                justify-content: space-around;
-                align-content: center;
-                text-align: center;
-                width: 100%;
-            }
-/*Cartas Pokemones*/
-            .cards {
-            padding: 20px;
-            padding-top: 5px;
-            padding-bottom: 10px;
-            margin: 15px;
-            width: 100px;
-            height: 180px;
-            text-align: center;
-            border-radius: 6%;
-            background: linear-gradient(#FEFFDF, #03A3C6);
-            opacity: 0.7;
-            box-shadow: -2px 2px 10px black;
-        }
-
-          .cards:hover {
-            opacity: 1;
-          }
-/*Texto cartas*/
-    h3 {
-        margin: 5px;
-        color: #42687e;
-        font-family: 'Lato', sans-serif;
-    }
-    h4 {
-        margin: 0px;
-        color: #42687e;
-        font-family: 'Lato', sans-serif;
-    }
-
-/*modal*/
-.modalCards {
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+.botonesDelFooter {
+   	color: #ffffff;
+    font-size: 1.2em;
+    margin: 0.3rem;
+    border: none;
     text-align: center;
-    flex-wrap: wrap;
-    display: none;
-    z-index: 1;
-    position: fixed;
-    padding: 1.5%;
-    padding-bottom: 50px;
-    margin-left: 35%;
-    width: 30%;
-    height: 40%;
-    border-radius: 6%;
-    background: #21feec; opacity: 0.9;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px){
+	.contenedor2 {
+	grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"selects selects selects"
+        "contenido contenido contenido"
+		"footer footer footer";
+	}
+
+	.selects{
+		display:flex;
+		flex-direction: column;
+	}
+
+	.selectDesplegables{
+		width: 100%;
+		height: 2.8em;
+		font-size: 1.3em;
+		display: flex;
+	} 
+}
+          
+/*Estilos de cada carta*/
+.cards {
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 15px;
+  width: 240px;
+  height: 240px;
+  text-align: center;
+  border-radius: 6%;
+  background: linear-gradient(#FEFFDF, #00C2FA);
+  opacity: 0.9;
+  box-shadow: -2px 2px 10px green;
+}
+.cards:hover {
+  opacity: 1;
+}
+/*Títulos para las cartas*/
+h3 {
+  margin: 5px;
+  color: #042910;
+  font-family: 'Lato', sans-serif;
+}
+h4 {
+  margin: 5px;
+  color: #045f21;
+  font-family: 'Lato', sans-serif;
+}
+/*Estilo del modal para las cartas*/
+.modalCards {
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  display: none;
+  z-index: 1;
+  position: fixed; 
+  padding: 1.5%;
+  padding-bottom: 50px;
+  margin-left: 35%;
+  width: 30%;
+  height: 40%;
+  border-radius: 20%;
+  background: #FEFFDF, #00C2FA; opacity: 0.9;  
+    
 }
 .modalCards.close {
-float: right;
-font-size: 28px;
-font-family: 'Lato', sans-serif;
-}
-
+  float: right;
+  font-size: 28px;
+  font-family: 'Lato', sans-serif;
+  }
+  
 .modalCards.close:hover,
 .modalCards.close:focus {
 text-decoration: none;
 cursor: pointer;
 }
+
+
