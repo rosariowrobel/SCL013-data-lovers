@@ -1,10 +1,11 @@
 //Importamos archivos .js
 
 import data from './data/pokemon/pokemon.js';
-import {filterData, filterType, filterName, pokeId} from './data.js';
+import {pokeId, filterData, filterType, filterName} from './data.js';
 
 //console.log(data);
 
+//////////Primero creamos las funciones de modal y filtros //////////
 
 //Creamos el modal para llamar a la tarjetas
 const modal = () => {
@@ -51,10 +52,7 @@ const modal = () => {
   height.textContent = "Altura: "+pokemon.height;
 
 
-  //Creamos los candy
-  let candy = document.createElement("p");
-  candy.className = "candy";
-  candy.textContent = "Candy: "+pokemon.candy;
+  
 
   //Llamamos las variables y  utilizamos appendChild hace referencia al nodo de la data  
   cards.appendChild(span);
@@ -62,25 +60,24 @@ const modal = () => {
   cards.appendChild(image);
   cards.appendChild(weight);
   cards.appendChild(height);
-  cards.appendChild(candy);
-
+  
   //En el container realizado, mostramos las tarjetas en nuestro HTML  
   document.getElementById("modalContainer").appendChild(cards).innerHTML;
   let mod = document.getElementById("modalCards");
   let body = document.getElementsByTagName("body")[0];
   let x = document.getElementsByClassName("close")[0];
-  let contenido = document.getElementsByClassName("contenido")[0];
+  let container= document.getElementsByClassName("container")[0];
   mod.style.display = "block";
   body.style.position = "static";
   body.style.overflow = "hidden";
-  contenido.style= "pointer-events:auto";
-  contenido.style.opacity = 0.5;
+  container.style= "pointer-events:auto";
+  container.style.opacity = 0.2;
   x.onclick = function() {
       mod.style.display = "none";
       body.style.position = "inherit";
       body.style.overflow = "auto";
-      contenido.style ="pointer-events:active;";
-      contenido.style.opacity = 1;
+      container.style ="pointer-events:active;";
+      container.style.opacity = 1;
   }
   });
   }
@@ -201,3 +198,48 @@ order2.addEventListener("change", () =>{
     }
     modal();
 })
+
+///////////////Aquí colocamos los botones para la funciones de la páginas/////////////
+
+// OCULTAR TODO AL CARGAR LA PÁGINA
+document.getElementById("portada").style.display = 'block';
+document.getElementById("paginaConceptos").style.display = 'none';
+document.getElementById("paginaPokedex").style.display = 'none';
+
+
+// FUNCIÓN DEL BOTON COMENZAR QUE LLEVA A LA PAGINA 2
+let botonComenzar = document.getElementById("botonInicio")
+botonComenzar.addEventListener ("click", mostrarPagina2)
+
+function mostrarPagina2 (){
+  document.getElementById("portada").style.display = 'none';
+  document.getElementById("paginaConceptos").style.display = 'block';
+  document.getElementById("paginaPokedex").style.display = 'none';
+  }
+
+  // FUNCIÓN DEL BOTON POKEDEX QUE LLEVA A LA PAGINA 3
+let botonPokedex = document.getElementById("botonPokedex")
+botonPokedex.addEventListener ("click", mostrarPagina3)
+
+function mostrarPagina3 (){
+  document.getElementById("portada").style.display = 'none';
+  document.getElementById("paginaConceptos").style.display = 'none';
+  document.getElementById("paginaPokedex").style.display = 'block';
+  }
+
+  // FUNCIÓN DEL BOTON ATRAS1 (QUE APARECE EN PÁGINA 2)
+let botonAtras1 = document.getElementById("botonAtras1")
+botonAtras1.addEventListener ("click", mostrarPortada)
+
+function mostrarPortada (){
+  document.getElementById("portada").style.display = 'block';
+  document.getElementById("paginaConceptos").style.display = 'none';
+  document.getElementById("paginaPokedex").style.display = 'none';
+  }
+
+// FUNCIÓN DEL BOTON ATRAS2 (QUE APARECE EN PÁGINA 3)
+let botonAtras2 = document.getElementById("botonAtras2")
+botonAtras2.addEventListener ("click", mostrarPagina2)
+
+
+

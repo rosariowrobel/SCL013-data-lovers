@@ -1,4 +1,15 @@
 import data from './data/pokemon/pokemon.js';
+//console.log(data);
+
+//Bloque que devuelve al pokemon por id para ver a todos
+export const pokeId = (idpk) => {
+  let result = data.pokemon.find(element => {
+    return element.id == idpk;
+
+  });
+  return result;
+
+};
 
 //Bloque para filtrar por tipo
 export const filterType = (type) => {
@@ -36,12 +47,3 @@ export const filterName = (name) => {
 
  };  
  
-//Bloque que devuelve al pokemon por id 
-  export const pokeId = (idpk) => {
-    let result = data.pokemon.find(element => {
-      return element.id == idpk;
-  
-    });
-    return result;
-  
-  };

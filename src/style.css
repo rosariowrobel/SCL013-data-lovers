@@ -211,7 +211,7 @@ body {
 		"nav nav nav"
 		"selects selects selects"
         "sidebar sidebar sidebar"
-        "contenido contenido contenido"
+		"contenido contenido contenido"
 		"footer footer footer";
 	}
 }
@@ -288,13 +288,8 @@ body {
 	display: flex;
 	grid-area: selects;
 }
-
-.contenedor2 .contenido {
-	/*	height: 25rem;*/
-  width: 100%; 
-	padding: 2rem;
-	font-size: 1.2em;
-	color: #08034d;
+.contenedor2 .container {
+	/*height: 25rem;*/ 
   grid-area: contenido;
   display: flex;
   flex-wrap: wrap;
@@ -306,8 +301,11 @@ body {
   align-content: center;
   text-align: center;
   width: 100%;
-	/*overflow : auto;*/ /*el scroll aparece solo si el contenido exede el tamaño de la caja*/
+
+  /*overflow : auto;*/ /*el scroll aparece solo si el contenido exede el tamaño de la caja*/
 }
+
+
 .contenedor2 .footer {
 	padding: 0.5rem;
 	background: linear-gradient(to left, #002148 0%, #00C2FA 100%);
@@ -333,7 +331,7 @@ body {
 		"header header header"
 		"nav nav nav"
 		"selects selects selects"
-        "contenido contenido contenido"
+		"contenido contenido contenido"
 		"footer footer footer";
 	}
 
@@ -379,7 +377,7 @@ h4 {
   font-family: 'Lato', sans-serif;
 }
 /*Estilo del modal para las cartas*/
-.modalCards {
+#modalCards {
   justify-content: space-around;
   align-items: center;
   align-content: center;
@@ -391,22 +389,32 @@ h4 {
   padding: 1.5%;
   padding-bottom: 50px;
   margin-left: 35%;
-  width: 30%;
-  height: 40%;
-  border-radius: 20%;
-  background: #FEFFDF, #00C2FA; opacity: 0.9;  
+  width: 20%;
+  height: 30;
+  border-radius: 30%;
+  background: linear-gradient(#FEFFDF, #00C2FA); opacity: 1;  
     
 }
-.modalCards.close {
+#modalCards.close {
   float: right;
   font-size: 28px;
   font-family: 'Lato', sans-serif;
   }
   
-.modalCards.close:hover,
-.modalCards.close:focus {
+#modalCards.close:hover,
+#modalCards.close:focus {
 text-decoration: none;
 cursor: pointer;
 }
-
+/*Títulos para las cartas*/
+h3 {
+	margin: 10px;
+	color: #042910;
+	font-family: 'Lato', sans-serif;
+  }
+  h4 {
+	margin: 10px;
+	color: #045f21;
+	font-family: 'Lato', sans-serif;
+  }
 
