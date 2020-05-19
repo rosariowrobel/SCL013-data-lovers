@@ -3,35 +3,10 @@
 import data from './data/pokemon/pokemon.js';
 import {filterData, filterType, filterName, pokeId} from './data.js';
 
-
 //console.log(data);
 
 
 //Creamos el modal para llamar a la tarjetas
-
-
-//FUncion para que aparescan todos los pokemones (Historia del usuario 2)
-const filterData = (select) => {
-  let filter = "";
-  //según su valor
-  if (select==="1-151"){
-    filter = data.pokemon.sort((a,b)=>{
-      return a.id - b.id
-    })}else if (select==="151-1"){
-      filter = data.pokemon.sort((a,b)=>{
-        return b.id - a.id
-      })}else if(select==="A-Z"){
-        filter = data.pokemon.sort((a,b)=>{
-          return a.name.localeCompare(b.name);
-      })}else if (select==="Z-A"){
-        filter = data.pokemon.sort((a,b)=>{
-          return b.name.localeCompare(a.name);
-      })}
-   return filter;
-
- };
-
-//modal para cada personaje con su info
 const modal = () => {
   let modalBig= document.querySelectorAll("div.cards"); //usamos querySelectorAll para llamar a la lista de elementos de la data 
   for (let i = 0; i <modalBig.length; i++){
@@ -226,4 +201,3 @@ order2.addEventListener("change", () =>{
     }
     modal();
 })
-
